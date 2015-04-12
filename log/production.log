@@ -1,0 +1,128 @@
+I, [2015-02-10T10:42:40.725110 #4770]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-02-10 10:42:40 +0530
+F, [2015-02-10T10:42:40.740524 #4770] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-02-10T10:42:49.683515 #4770]  INFO -- : Started GET "/static_page/home" for 127.0.0.1 at 2015-02-10 10:42:49 +0530
+I, [2015-02-10T10:42:49.685550 #4770]  INFO -- : Processing by StaticPageController#home as HTML
+I, [2015-02-10T10:42:49.717511 #4770]  INFO -- : Completed 500 Internal Server Error in 32ms
+I, [2015-02-10T10:42:49.859608 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_request.text.erb (1.6ms)
+I, [2015-02-10T10:42:49.861349 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.4ms)
+I, [2015-02-10T10:42:49.863845 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.7ms)
+I, [2015-02-10T10:42:49.864118 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:42:49.867220 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_environment.text.erb (1.7ms)
+I, [2015-02-10T10:42:49.867479 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:42:49.869685 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.5ms)
+I, [2015-02-10T10:42:49.870024 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:42:49.870150 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (17.1ms)
+I, [2015-02-10T10:42:51.390188 #4770]  INFO -- : 
+Sent mail to shantilal@complitech.net (1516.4ms)
+F, [2015-02-10T10:42:51.399120 #4770] FATAL -- : 
+NameError (undefined local variable or method `exception' for #<StaticPageController:0x8e18b80>):
+  app/controllers/static_page_controller.rb:3:in `home'
+
+
+I, [2015-02-10T10:43:44.581581 #4770]  INFO -- : Started GET "/static_page/home" for 127.0.0.1 at 2015-02-10 10:43:44 +0530
+I, [2015-02-10T10:43:44.583260 #4770]  INFO -- : Processing by StaticPageController#home as HTML
+I, [2015-02-10T10:43:44.591311 #4770]  INFO -- : Completed 500 Internal Server Error in 8ms
+I, [2015-02-10T10:43:44.606957 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_request.text.erb (0.3ms)
+I, [2015-02-10T10:43:44.607499 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:43:44.608092 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.1ms)
+I, [2015-02-10T10:43:44.608304 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:43:44.610041 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_environment.text.erb (1.3ms)
+I, [2015-02-10T10:43:44.610262 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:43:44.610981 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.0ms)
+I, [2015-02-10T10:43:44.611188 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:43:44.611295 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (7.9ms)
+I, [2015-02-10T10:43:45.688974 #4770]  INFO -- : 
+Sent mail to shantilal@complitech.net (1075.7ms)
+F, [2015-02-10T10:43:45.696936 #4770] FATAL -- : 
+NameError (undefined local variable or method `exception' for #<StaticPageController:0xa2b1740>):
+  app/controllers/static_page_controller.rb:3:in `home'
+
+
+I, [2015-02-10T10:56:26.926579 #4770]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-02-10 10:56:26 +0530
+F, [2015-02-10T10:56:26.928368 #4770] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/shantilal/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-02-10T10:56:30.974773 #4770]  INFO -- : Started GET "/static_page/home" for 127.0.0.1 at 2015-02-10 10:56:30 +0530
+I, [2015-02-10T10:56:30.976016 #4770]  INFO -- : Processing by StaticPageController#home as HTML
+I, [2015-02-10T10:56:30.981679 #4770]  INFO -- : Completed 500 Internal Server Error in 5ms
+I, [2015-02-10T10:56:30.996476 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_request.text.erb (0.3ms)
+I, [2015-02-10T10:56:30.997012 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:56:30.997567 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.1ms)
+I, [2015-02-10T10:56:30.997763 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:56:30.999459 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_environment.text.erb (1.2ms)
+I, [2015-02-10T10:56:30.999740 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:56:31.000469 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.0ms)
+I, [2015-02-10T10:56:31.000673 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:56:31.000782 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (7.4ms)
+I, [2015-02-10T10:56:36.889222 #4770]  INFO -- : 
+Sent mail to shantilal@complitech.net (5886.5ms)
+F, [2015-02-10T10:56:36.896912 #4770] FATAL -- : 
+NameError (undefined local variable or method `exception' for #<StaticPageController:0xb5665264>):
+  app/controllers/static_page_controller.rb:3:in `home'
+
+
+I, [2015-02-10T10:57:55.948962 #4770]  INFO -- : Started GET "/static_page/home" for 127.0.0.1 at 2015-02-10 10:57:55 +0530
+I, [2015-02-10T10:57:55.949850 #4770]  INFO -- : Processing by StaticPageController#home as HTML
+I, [2015-02-10T10:57:55.954013 #4770]  INFO -- : Completed 500 Internal Server Error in 4ms
+I, [2015-02-10T10:57:55.968434 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_request.text.erb (0.3ms)
+I, [2015-02-10T10:57:55.968957 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.969532 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_session.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.969732 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.971800 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_environment.text.erb (1.6ms)
+I, [2015-02-10T10:57:55.972029 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.972901 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_backtrace.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.973230 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/_title.text.erb (0.1ms)
+I, [2015-02-10T10:57:55.973391 #4770]  INFO -- :   Rendered /home/shantilal/.rvm/gems/ruby-2.1.5@shan/gems/exception_notification-4.0.1/lib/exception_notifier/views/exception_notifier/exception_notification.text.erb (8.1ms)
+I, [2015-02-10T10:57:57.186176 #4770]  INFO -- : 
+Sent mail to shantilal@complitech.net (1210.6ms)
+F, [2015-02-10T10:57:57.194490 #4770] FATAL -- : 
+NameError (undefined local variable or method `exception' for #<StaticPageController:0xb553ad80>):
+  app/controllers/static_page_controller.rb:3:in `home'
+
+
